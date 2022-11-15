@@ -9,6 +9,15 @@ const Header = () => {
       <Typography variant="h4">
         <Typed strings={["Dylan Barry"]} typeSpeed={40} />
       </Typography>
+      <br />
+      <Typography variant="h5">
+        <Typed
+          strings={["Web Design", "UX Design", "DevOps"]}
+          typeSpeed={40}
+          backSpeed={60}
+          loop
+        ></Typed>
+      </Typography>
     </Box>
   );
 };
