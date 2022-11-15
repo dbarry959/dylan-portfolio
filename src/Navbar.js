@@ -36,6 +36,25 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const menuItems = [
+  {
+    smolIcon: <Home />,
+    listText: "Home",
+  },
+  {
+    smolIcon: <AssignmentInd />,
+    listText: "Resume",
+  },
+  {
+    smolIcon: <Apps />,
+    listText: "MyWork",
+  },
+  {
+    smolIcon: <ContactMail />,
+    listText: "Contacts",
+  },
+];
+
 const Navbar = () => {
   const classes = useStyles();
   return (
@@ -43,6 +62,13 @@ const Navbar = () => {
       <Box className={classes.menuSliderContainer} component="div">
         <Avatar className={classes.Avatar} src={avatar} alt="Dylan"></Avatar>
       </Box>
+      <Divider />
+      <List>
+        menuItems.map((lsItem, key)=>)
+        <ListItem>
+          <ListItemIcon></ListItemIcon>
+        </ListItem>
+      </List>
       <Box component="nav">
         <AppBar position="static" style={{ background: "#222" }}>
           <Toolbar>
