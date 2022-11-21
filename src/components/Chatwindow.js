@@ -44,7 +44,7 @@ export default class Chatwindow extends Component {
         //if user types in something that's out of scope, AI sends a message apologizing for not understanding. else, sends the correct response
         if (res.traits[index[0]] === undefined) {
           let msg =
-            "i'm sorry, i didn't quite get that. i'll check and let you know as soon as i get an answer ;)";
+            "I'm sorry, I didn't quite get that. Let me get back to you on that! :)";
           self._sendMessage(msg);
         } else {
           self._sendMessage(res.traits[index[0]][0].value);
