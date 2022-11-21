@@ -20,7 +20,7 @@ export default class Chatwindow extends Component {
   }
   componentDidMount() {
     let message =
-      "Welcome to Profitual! I'm the assistant. How can I help you?";
+      "Welcome to Dylan's Portfolio! I'm the assistant. How can I help you?";
     this._sendMessage(message);
   }
   _onMessageWasSent(message) {
